@@ -1,28 +1,38 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import styled from 'styled-components'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import GlobalStyle from './styles/global'
+import theme from './styles/theme'
+import './styles/icons'
+import { Navbar, TitleBar } from './components/Nav'
+import { Menu } from './components/Menu'
+
+const Layout = styled.div`
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  grid-template-rows: 3.8rem 4.2rem 1fr;
+  grid-template-areas:
+    'titlebar titlebar'
+    'nav nav'
+    'menu content';
+`
+
+const Content = styled.main`
+  color: ${theme.palette.birch};
+  background: ${theme.colors.mercury};
+  grid-area: content;
+`
+
+const App = props => {
+  return (
+    <Layout>
+      <GlobalStyle />
+      <TitleBar />
+      <Navbar />
+      <Menu />
+      <Content />
+    </Layout>
+  )
 }
 
-export default App;
+export default App

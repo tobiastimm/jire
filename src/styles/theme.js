@@ -1,0 +1,28 @@
+export default {
+  palette: {
+    firefly: '#0A1C28',
+    ebonyClay: '#27313C',
+    bermudaGray: '#6C89A3',
+    heather: '#BBCCD2',
+    mercury: '#E8E7E6',
+    goldenGrass: '#D5A419',
+    birch: '#302D1F',
+    deepKoamaru: '#172B7B',
+    bayOfMany: '#254983',
+    curiousBlue: '#288BDE',
+    pampas: '#F6F5F0',
+  },
+  colors: {
+    mineShaft: '#222222',
+    mineShaft2: '#2C2C2C',
+    scorpion: '#595959',
+    alabaster: '#FAFAFA',
+    indigo: '#537AC7',
+    congressBlue: '#054A91',
+    zumthor: '#E6F0FF',
+    mercury: '#E5E5E5',
+    deepSea: '#008A62',
+    goldenGrass: '#D5A419',
+    burntUmber: '#8A243D',
+  },
+}
