@@ -6,15 +6,19 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.7",
     "@fortawesome/free-solid-svg-icons": "^5.4.2",
     "@fortawesome/react-fontawesome": "^0.1.3",
+    "carlo": "^0.9.7",
     "classnames": "^2.2.6",
     "polished": "^2.3.0",
     "react": "16.7.0-alpha.0",
     "react-dom": "16.7.0-alpha.0",
     "react-scripts": "2.1.0",
     "styled-components": "^4.0.3",
-    "styled-normalize": "^8.0.3"
+    "styled-normalize": "^8.0.3",
+    "uuid": "^3.3.2"
   },
   "scripts": {
+    "c:start": "concurrently \"yarn start\" \"yarn carlo:start\"",
+    "carlo:start": "node public/index.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -30,6 +34,11 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.8.0"
+    "babel-plugin-styled-components": "^1.8.0",
+    "concurrently": "^4.0.1",
+    "stylelint": "^9.7.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.5.0"
   }
 }
