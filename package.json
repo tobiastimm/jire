@@ -1,5 +1,6 @@
 {
   "name": "jire",
+  "description": "JIRA + React. jire is a JIRA client built with react and electron",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

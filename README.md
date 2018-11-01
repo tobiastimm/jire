@@ -1,5 +1,7 @@
-#JIRE
+#jire
 
-JIRA client built with react and electron.
+> JIRA + react = jire
 
-Playground project to play with Hooks
+jire is a JIRA client built with react and electron
+
+Personal playground project to play with Hooks
